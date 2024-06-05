@@ -1,0 +1,48 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar Styles */
+.navbar {
+    background-color: #fff;
+    border-bottom: 1px solid #e7e7e7;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    width: 50px;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+/* Container Styles */
+.container {
+    margin-top: 100px;
+    padding: 20px;
+}
+
+/* Sign Up Form Styles */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.btn-block {
+    margin-top: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        margin-top: 80px;
+    }
+}

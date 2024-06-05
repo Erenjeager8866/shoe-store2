@@ -1,0 +1,122 @@
+/* General Styles */
+body {
+    font-family: Garamond, serif;
+    background-color: #2186eb;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar Styles */
+.navbar {
+    background-color: #fff;
+    border-bottom: 1px solid #e7e7e7;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    width: 50px;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+/* Container Styles */
+.container {
+    margin-top: 100px;
+    padding: 20px;
+}
+
+/* Middle Shoe Image Styles */
+.middle-shoe {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.middle-shoe:hover {
+    transform: scale(1.1);
+}
+
+/* Details Box Styles */
+.details-box {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    border: solid rgb(214, 99, 27);
+    
+    
+}
+
+/* Text Content Styles */
+.text-content {
+    margin-top: 20px;
+}
+
+/* Bottom Shoes Styles */
+.bottom-shoes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bottom-shoe {
+    margin: 10px;
+    max-width: 100px;
+    transition: transform 0.3s ease;
+    box-shadow: 8px 8px 15px black;
+}
+
+.bottom-shoe:hover {
+    transform: scale(1.1);
+}
+
+.bottom-shoe img {
+    max-width: 100%;
+    display: flex;
+}
+
+/* Button Styles */
+.buy-now {
+    background-color: orange;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+.buy-now:hover {
+    background-color: rgb(204, 147, 40);
+    transform: scale(1.05);
+}
+.img-fluid{
+    height: 50px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .bottom-shoes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .details-box {
+        margin-top: 20px;
+    }
+}

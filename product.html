@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="index.html"><img src="images/nike-logo.png" alt="Logo" class="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="xyz.html">Sign In</a></li>
+               
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5 pt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6 text-center">
+                <h2>Product Details</h2>
+                <img id="product-image" src="" alt="Product Shoe" class="img-fluid">
+                <p id="product-description">Product description goes here.</p>
+                <p><strong>Price: $120</strong></p>
+                <button class="btn btn-primary">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var urlParams = new URLSearchParams(window.location.search);
+            var shoeIndex = urlParams.get('shoe');
+            var shoeImages = [
+                'images/shoe1.png',
+                'images/shoe2.png',
+                'images/shoe3.png',
+                'images/shoe4.png',
+                'images/shoe5.png'
+            ];
+            var shoeDescriptions = [
+                'Description for Shoe 1.',
+                'Description for Shoe 2.',
+                'Description for Shoe 3.',
+                'Description for Shoe 4.',
+                'Description for Shoe 5.'
+            ];
+
+            if (shoeIndex !== null) {
+                document.getElementById('product-image').src = shoeImages[shoeIndex];
+                document.getElementById('product-description').textContent = shoeDescriptions[shoeIndex];
+            }
+        });
+    </script>
+</body>
+</html>
